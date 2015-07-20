@@ -25,8 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(passport.initialize());
 
 passport.use(new LinkedInStrategy({
-  clientID: '78bkwxky7oad19',
-  clientSecret: 'O6FsqAAXXoptNVHB',
+  clientID: '',
+  clientSecret: '',
   callbackURL: "http://127.0.0.1:3000/auth/linkedin/callback",
   scope: ['r_emailaddress', 'r_basicprofile']
 }, function (accessToken, refreshToken, profile, done) {
